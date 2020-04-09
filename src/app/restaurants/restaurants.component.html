@@ -1,0 +1,32 @@
+<ul class="restaurants">
+  <li *ngFor="let restaurant of restaurants">
+    <a routerLink="/restaurants/{{restaurant.id}}">
+      <span class="badge">{{restaurant.id}}</span> {{restaurant.name}}
+    </a>
+    <button class="delete" title="delete restaurant"
+      (click)="delete(restaurant)">x</button>
+  </li>
+</ul>
+
+<div>
+  <label>Restaurant name:
+    <input #restaurantName />
+  </label>
+  <label>Restaurant image_url:
+    <input #restaurantImage_url />
+  </label>
+  <label>Restaurant address:
+    <input #restaurantAddress />
+  </label>
+  <label>Restaurant contact:
+    <input #restaurantContact />
+  </label>
+  <label>Restaurant avg_price:
+    <input #restaurantAvg_price />
+  </label>
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(restaurantName.value, restaurantImage_url.value, restaurantAddress.value, restaurantContact.value, restaurantAvg_price.value); restaurantName.value=restaurantImage_url.value=restaurantAddress.value=restaurantContact.value=restaurantAvg_price.value=''">
+    add
+  </button>
+</div>
