@@ -1,0 +1,73 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+    display: inline-block;
+    width: 3em;
+    margin: .5em 0;
+    color: gray;
+    font-weight: bold;
+  }
+  input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+  }
+  #head2 {
+    font-family: 'Teko', serif;
+    text-align: center;
+    margin-top: 7px;
+    font-size: 32px;
+  }
+  button {
+    margin-top: 20px;
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+  .img{
+    float: right;
+    margin-top: -50px;
+    margin-right: 50px;
+  }
+  .menu {
+    background-image: url("https://www.backgroundtexture.com/file/si184460/texture-metal-03-fi2916686x990.jpg");
+    width: 85px;
+    height: 40px;
+    font-size: 25px;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-top: -50px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-radius: 7px;
+  }
+  .reviews {
+    height: 550px;
+    max-height: 800px;
+    width: 680px;
+    margin-bottom: 3cm;
+    position: relative;
+    border-radius: 4%;
+    float: left;
+    background-image: url("https://www.backgroundtexture.com/file/si184460/texture-metal-03-fi2916686x990.jpg")
+  }
+  #write {
+    width: 85%;
+    height: 12%;
+    font-size: 16px;
+    margin-top: 100px;
+    margin-left: 1px;
+  }
