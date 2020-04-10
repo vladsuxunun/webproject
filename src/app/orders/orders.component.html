@@ -1,10 +1,12 @@
+<body>
 <div class="main" *ngIf="!empty">
 
   <div class="orders" *ngFor="let order of orders">
-    <div class="column">
-      <h3>{{order.dish_name}}</h3>
+    <div class="orders">
+      <br><br><h3>{{order.dish_name}}</h3><br>
+      <img class="img" src={{order.dish_url}}>
     </div>
-    <div class="column">
+    <div class="delete">
       <button class="button"  (click)="deleteOrder(order)">Delete</button>
     </div>
   </div>
@@ -17,5 +19,6 @@
 
 
 <div *ngIf="empty">
-  <h3>Your order list is empty!</h3>
+  <h4>Thank you for ordering! Stay with us!</h4>
 </div>
+</body>>

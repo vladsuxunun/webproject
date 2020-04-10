@@ -1,19 +1,27 @@
+
+body{
+    height: 1500px;
+    background-image: url("/assets/menu.jpg");
+  }
+
 h3{
-    font-family: 'Tako', serif;
-    font-size: 200%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: rgb(109, 183, 189);
+}
+h4{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: chocolate;
     text-align: center;
 }
-.column{
-    padding-left: 150px;
-    padding-top: 10px;
-    float: left;
-    width: 30%;
-    height: 100px;
-    background-color:white;
+.orders{
+    position: relative;
 }
 .confirm{
-   padding-top: 15%;
-   padding-left: 38%;
+   padding-top: 70px;
+   padding-left: 400px;
 }
 .main{
    padding: 30px;
@@ -25,15 +33,24 @@ h3{
       color:white;
       border-radius: 7%;
       border-block-start-color: cadetblue;
+      font-size:100%;
 }
 .button2{
-    width: 100px;
+      width: 100px;
       height: 32px;
-      background-color: green;
+      background-color: cadetblue;
       color:white;
       border-radius: 8%;
-      border-block-start-color: green;
+      font-size:100%;
 }
 .button2:hover{
     background-color: rgb(3, 110, 3);
 }
+.img{
+    position: relative;
+    float: left;
+    margin-top: -50px;
+    margin-right: 50px;
+    height: 120px;
+    width: 150px;
+  }

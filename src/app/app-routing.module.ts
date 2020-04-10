@@ -7,13 +7,16 @@ import { OrdersComponent } from './orders/orders.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
- 
+  
   { path: 'restaurants/:id/menu', component: MenuComponent },
   { path: 'restaurants/:id', component: RestaurantDetailComponent },
-  { path: 'restaurants', component: RestaurantsComponent },
+  { path: 'restaurants',  component: RestaurantsComponent },
   {path: 'orders', component:OrdersComponent}, 
   {path: 'login', component: LoginComponent},
-];
+  { path: '',
+    redirectTo: '/restaurants',
+    pathMatch: 'full'}
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
