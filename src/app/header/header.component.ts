@@ -4,7 +4,7 @@ import {Item } from '../restaurant';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
   public items: Item[] = [
@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
     { title: 'Orders', link: 'orders' },
   ];
 
-  public isLogged = true;
+  public isLogged = false;
   public isAdmin = true;
 
   public userName = 'user1';

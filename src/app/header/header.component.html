@@ -1,30 +1,19 @@
 <body>
-
-<div class="main1">
-  <nav>
-    <ul class="nav-tabs">
-      <li class="nav-item">
-        <a href={{items[0].link}} class="nav-link active">{{items[0].title}}</a>
-      </li>
-      <li class="nav-item" *ngIf="isLogged">
-        <a href={{items[1].link}} class="nav-link active">{{items[1].title}}</a>
-      </li>
-    </ul>
-  </nav>
-</div>
-
-<div class="sign" *ngIf="!isLogged">
-  <div class="sign_button">
-    <a href="/login">Log in</a>
+  <h3>Bon Appetit is not just about food, it's about family and love! </h3>
+  <h4 class="text">Our company "BON APPETIT" is a network of institutions. A special fact is that our company is a family business. This means that all the best and useful things that we give to our relatives and friends for more than 15 years are also intended for our employees, for our guests and for our partners. Confidence, stability, a sense of comfort and reliability are the values ​​on which our work is based for all people whose life position is based on a positive attitude towards interdependent needs and expectations</h4>
+    <div class="sign" *ngIf="!isLogged">
+  <div >
+    <a class="register" href="/login">Log in</a>
   </div>
-  <div class="sign_button">
-    <a href="/signup">Sign up</a>
+  <div>
+    <a class="signup" href="/signup">Sign up</a>
   </div>
-
 </div>
-
+<div>
+  <a class="ORDERS" routerLink="/orders/">ORDERS</a>
+</div>
 <div class="sign_out" *ngIf="isLogged">
-  <h4>Hello, {{this.userName}}</h4>
+  <h4 class="greeting">Hello, {{this.userName}}! Nice to meet you</h4>
   <div class="logout">
     <a href="/" (click)="logout()">Log out</a>
   </div>
@@ -33,15 +22,7 @@
 
 <div class="main2">
 <div class="image">
-  <img src="/assets/66.jpg" alt="logo" width="150px">
-</div>
-
-<link href="https://fonts.googleapis.com/css?family=Gugi|Teko" rel="stylesheet">
-<h1>BON APPETIT</h1>
-<div style="text-align:center">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
+  <img src="/assets/2.png" alt="logo" width="200px">
 </div>
 </div>
 </body>
