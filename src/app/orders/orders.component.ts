@@ -5,7 +5,7 @@ import { RestaurantService } from '../restaurant.service';
 @Component({
   selector: 'app-orders',
   templateUrl: './orders.component.html',
-  styleUrls: ['./orders.component.scss']
+  styleUrls: ['./orders.component.css']
 })
 export class OrdersComponent implements OnInit {
 
@@ -29,6 +29,7 @@ export class OrdersComponent implements OnInit {
   }
 
   deleteOrders(): void{
+    this.empty=true;
     this.orders.forEach(order => {
       this.deleteOrder(order)
     });
