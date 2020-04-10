@@ -1,15 +1,19 @@
 /* HeroDetailComponent's private CSS styles */
+body{
+  height: 1500px;
+  background-image: url("/assets/n.jpg");
+}
 label {
     display: inline-block;
     width: 3em;
     margin: .5em 0;
-    color: gray;
+    color: rgb(109, 183, 189);
     font-weight: bold;
   }
   input {
     height: 2em;
     font-size: 1em;
-    padding-left: .4em;
+    margin-left: 20px;
   }
   #head2 {
     font-family: 'Teko', serif;
@@ -18,11 +22,14 @@ label {
     font-size: 32px;
   }
   button {
+    margin-left: 20px;
     margin-top: 20px;
     font-family: Arial;
-    background-color: #eee;
+    background-color: rgb(109, 183, 189);
     border: none;
-    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px 20px;
     border-radius: 4px;
     cursor: pointer;
     cursor: hand;
@@ -41,7 +48,7 @@ label {
     margin-right: 50px;
   }
   .menu {
-    background-image: url("https://www.backgroundtexture.com/file/si184460/texture-metal-03-fi2916686x990.jpg");
+    
     width: 85px;
     height: 40px;
     font-size: 25px;
@@ -55,19 +62,27 @@ label {
     border-radius: 7px;
   }
   .reviews {
-    height: 550px;
-    max-height: 800px;
+    height: 750px;
+    max-height: 2000px;
     width: 680px;
     margin-bottom: 3cm;
     position: relative;
+    color: white;
     border-radius: 4%;
     float: left;
-    background-image: url("https://www.backgroundtexture.com/file/si184460/texture-metal-03-fi2916686x990.jpg")
+    
   }
   #write {
     width: 85%;
     height: 12%;
     font-size: 16px;
     margin-top: 100px;
-    margin-left: 1px;
+    margin-left: 10px;
+  }
+  h4,p{
+    font-size: large;
+    color: white;
+  }
+  h2{
+    Color: rgb(109, 183, 189);
   }
