@@ -1,3 +1,4 @@
+<body>
 <ul class="restaurants">
   <li *ngFor="let restaurant of restaurants">
     <a routerLink="/restaurants/{{restaurant.id}}">
@@ -7,26 +8,26 @@
       (click)="delete(restaurant)">x</button>
   </li>
 </ul>
+<p>Have any recommendations? Add restaurant here (we will take a look at it):</p>
+<div >
+  <label > 
+    <input placeholder="Name" #restaurantName />
+  </label><br><br>
+  <label>
+    <input placeholder="Add logo:" #restaurantImage_url />
+  </label><br><br>
+  <label>
+    <input  placeholder="Address:" #restaurantAddress />
+  </label><br><br>
+  <label>
+    <input  placeholder="Contact:" #restaurantContact />
+  </label><br><br>
+  <label>
+    <input placeholder="Average price:" #restaurantAvg_price />
+  </label><br><br>
 
-<div>
-  <label>Restaurant name:
-    <input #restaurantName />
-  </label>
-  <label>Restaurant image_url:
-    <input #restaurantImage_url />
-  </label>
-  <label>Restaurant address:
-    <input #restaurantAddress />
-  </label>
-  <label>Restaurant contact:
-    <input #restaurantContact />
-  </label>
-  <label>Restaurant avg_price:
-    <input #restaurantAvg_price />
-  </label>
-
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(restaurantName.value, restaurantImage_url.value, restaurantAddress.value, restaurantContact.value, restaurantAvg_price.value); restaurantName.value=restaurantImage_url.value=restaurantAddress.value=restaurantContact.value=restaurantAvg_price.value=''">
-    add
+  <button class="add" (click)="add(restaurantName.value, restaurantImage_url.value, restaurantAddress.value, restaurantContact.value, restaurantAvg_price.value); restaurantName.value=restaurantImage_url.value=restaurantAddress.value=restaurantContact.value=restaurantAvg_price.value=''">
+    Add
   </button>
 </div>
+</body>

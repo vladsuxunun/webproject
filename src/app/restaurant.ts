@@ -26,6 +26,7 @@ export interface IDish {
   name: string;
   price: number;
   restaurantId: string;
+  image_url: string
 }
 
 export interface IReview {
@@ -40,6 +41,7 @@ export interface IOrder {
   dish_name: string;
   count: number;
   user: IUser;
+  dish_url: string;
 }
 
 export interface IAuthResponse {
