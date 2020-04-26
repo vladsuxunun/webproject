@@ -1,0 +1,17 @@
+<body>
+<div class="row">
+  <h1 id="menu">Menu</h1>
+  <div class="dishes" *ngFor="let dish of dishes">
+    <div>
+      <div class="column" id="column1">
+        <h3>{{dish.name}}</h3>
+        <h4>Price: {{dish.price}}</h4>
+        <img class="img" src={{dish.image_url}} alt="image" width="150px">
+      </div>
+      <div *ngIf="isLogged">
+        <button  id="order" (click)="postOrder(dish)">Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

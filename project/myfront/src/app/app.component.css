@@ -1,0 +1,55 @@
+/* AppComponent's private CSS styles */
+h1 {
+    font-size: 5.2em;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  nav a {
+    letter-spacing: 0.3px;
+    font-size: 25px;
+    margin-left: 470px;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+    text-decoration:none;
+    max-width: 600px;
+    color: darkolivegreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  nav a:hover{
+    color: darkseagreen;
+  }
+  nav a::before{
+    content: "";
+    display: block;
+    width: 280px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+    margin-left: 200px;
+  }
+  nav a::after{
+    content: "";
+    display: block;
+    width: 280px;
+    height: 2px;
+    margin-right: 200px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+  }
+  span{
+    background: #fff;
+
+  }
+

@@ -1,0 +1,33 @@
+<body>
+<ul class="restaurants">
+  <li *ngFor="let restaurant of restaurants">
+    <a href="/restaurants/{{restaurant.id}}" (click)="onSelect(restaurant)">
+      <span class="badge">{{restaurant.id}}</span> {{restaurant.name}}
+    </a>
+    <button class="delete" title="delete restaurant"
+      (click)="delete(restaurant)">x</button>
+  </li>
+</ul>
+<p>Have any recommendations? Add restaurant here (we will take a look at it):</p>
+<div>
+  <label > 
+    <input placeholder="Name" #restaurantName />
+  </label><br><br>
+  <label>
+    <input placeholder="Add logo:" #restaurantImage_url />
+  </label><br><br>
+  <label>
+    <input  placeholder="Address:" #restaurantAddress />
+  </label><br><br>
+  <label>
+    <input  placeholder="Contact:" #restaurantContact />
+  </label><br><br>
+  <label>
+    <input placeholder="Average price:" #restaurantAvg_price />
+  </label><br><br>
+
+  <button class="add" (click)="add(restaurantName.value, restaurantImage_url.value, restaurantAddress.value, restaurantContact.value, restaurantAvg_price.value); restaurantName.value=restaurantImage_url.value=restaurantAddress.value=restaurantContact.value=restaurantAvg_price.value=''">
+    add
+  </button>
+</div>
+</body>

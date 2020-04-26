@@ -1,0 +1,28 @@
+<body>
+  <h3>Bon Appetit is not just about food, it's about family and love! </h3>
+  <h4 class="text">Our company "BON APPETIT" is a network of institutions. A special fact is that our company is a family business. This means that all the best and useful things that we give to our relatives and friends for more than 15 years are also intended for our employees, for our guests and for our partners. Confidence, stability, a sense of comfort and reliability are the values ​​on which our work is based for all people whose life position is based on a positive attitude towards interdependent needs and expectations</h4>
+    <div class="sign" *ngIf="!isLogged">
+  <div >
+    <a class="register" href="/login">Log in</a>
+  </div>
+  <div>
+    <a class="signup" href="/signup">Sign up</a>
+  </div>
+</div>
+<div>
+  <a class="ORDERS" routerLink="/orders/">ORDERS</a>
+</div>
+<div class="sign_out" *ngIf="isLogged">
+  <h4 class="greeting">Hello, {{this.userName}}! Nice to meet you</h4>
+  <div class="logout">
+    <a href="/" (click)="logout()">Log out</a>
+  </div>
+</div>
+
+
+<div class="main2">
+<div class="image">
+  <img src="/assets/2.png" alt="logo" width="200px">
+</div>
+</div>
+</body>

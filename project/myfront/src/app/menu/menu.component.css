@@ -1,0 +1,91 @@
+body{
+  height: 1500px;
+  background-image: url("/assets/menu.jpg");
+}
+.row {
+  height: 1200px;
+}
+.img{
+  height: 120px;
+  width: 150px;
+}
+.column {
+    padding-top: 10px;
+    float: left;
+    width: 50%;
+    height: 100px;
+    color: white;
+
+  }
+  .column3 {
+    padding-top: -10px;
+    float: left;
+    width: 40%;
+    height: 100px;
+    background-color:white;
+  }
+
+  #menu{
+      padding-top: 10px;
+      padding-left: 45%;
+      color: rgb(102, 175, 165);
+      font-family: 'Times New Roman', Times, serif ;
+  }
+  h3{
+      color: rgb(102, 175, 165);;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 180%;
+  }
+  h4{
+      color: rgb(102, 175, 165); ;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 120%;
+
+  }
+  #order{
+      width: 100px;
+      height: 40px;
+      font-size:100%;
+      background-color: darkcyan;
+      color:white;
+      border-radius: 7%;
+      margin-top: 50px;
+      border-block-start-color: darkcyan;
+      font-weight: bold;
+  }
+  #save{
+    width: 70px;
+    height: 32px;
+    background-color: cadetblue;
+    color:white;
+    border-radius: 7%;
+    border-block-start-color: cadetblue;
+    margin-left: 5px;
+  }
+  #save:hover{
+    background-color: rgb(72, 132, 134);
+  }
+  #order:hover{
+      background-color: rgb(72, 132, 134);
+  }
+  #input{
+      padding-left: 10px;
+      width:200px;
+      height: 30px;
+      border-radius: 7%;
+  }
+  #input2{
+    width:80px;
+    height: 30px;
+    border-radius: 7%;
+    padding-left: 10px;
+    margin-left: 5px;
+}
+  #inputs{
+      padding-left: 0%;
+  }
+  .dishes{
+      margin-top: 20px;
+      margin-bottom: 5cm;
+      margin-left: 200px;
+  }
