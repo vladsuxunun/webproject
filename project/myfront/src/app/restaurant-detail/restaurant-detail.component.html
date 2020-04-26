@@ -1,0 +1,35 @@
+<body>
+  <div *ngIf="restaurant">
+    <div>
+        <label>Name:<br>
+          <input [(ngModel)]="restaurant.name" placeholder="name"/>
+        </label><br>
+        <img class="img" src={{restaurant.image_url}} alt="image" width="550px">
+        <label>Address:<br>
+          <input [(ngModel)]="restaurant.address" placeholder="address"/><br>
+        </label><br>
+        <label>Contacts:<br>
+          <input [(ngModel)]="restaurant.contact" placeholder="contacts"/><br>
+        </label><br>
+        <label>Avg_cost:<br>
+          <input [(ngModel)]="restaurant.avg_cost" placeholder="avg_cost"/><br>
+        </label>
+      </div>
+      <a class="menu" routerLink="/restaurants/{{restaurant.id}}/menu">Menu</a>
+      <button (click)="goBack()">go back</button>
+      <button (click)="save()">save</button>
+    </div><br><br>
+    <div class="reviews">
+      <h2 id="head2">Reviews</h2>
+      <div class="content" *ngFor="let review of reviews">
+        <div class="review">
+          <h4>{{review.user.username}}</h4>
+          <p>{{review.text}}</p>
+        </div>
+      </div>
+      <div *ngIf="isLogged" class="in">
+        <textarea placeholder="Your review" name="" id="write" cols="250" rows="6" [(ngModel)]="text"></textarea>
+        <button id="send" (click)="sendReview()">Send</button>
+      </div>
+    </div>
+  </body>

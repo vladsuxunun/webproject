@@ -1,0 +1,68 @@
+h3{
+  position: relative;
+  padding-left: 400px;
+  color: darkcyan;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text{
+  margin: 10px 300px 10px 300px;
+  color: darkcyan;
+  text-align: center;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ORDERS{
+  position: absolute;
+  padding-top: -40px;
+  padding-left: 40px;
+  text-decoration: none;
+  color:darkcyan;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ORDERS:hover{
+  color: aqua;
+}
+.image{
+  float: left;
+  margin: -200px -50px 0px 10px;
+}
+.greeting{
+  float: right;
+  margin: -150px 0px 0px 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: darkslategray;
+  font-size: 13px;
+}
+.logout{
+  float: right;
+  margin: -100px 0px 0px 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: darkslategray;
+  font-size: 18px;
+}
+.register{
+  float: right;
+  text-decoration: none;
+
+  margin: -130px 0px 0px 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: darkslategray;
+  font-size: 18px;
+}
+.register:hover{
+  color: teal;
+  cursor: pointer;
+}
+.signup:hover{
+  color: teal;
+  cursor: pointer;
+}
+.signup{
+  float: right;
+  text-decoration: none;
+  margin: -150px 0px 0px 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: darkslategray;
+  font-size: 18px;
+}
